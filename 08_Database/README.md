@@ -458,3 +458,41 @@ Windows File ServerをAWSクラウド上で利用したい場合に利用する�
   - 単一AZの単一サブネットを指定して構成する
   - 複数インスタンスでの共有や他AZ内のインスタンスからのアクセスも可能
   - マルチAZ構成を実施することも可能
+
+### データ量への対応
+
+AWSは大量なデータ処理への各段階において必要なサービスが提供されている。
+
+1. 効率的なデータ蓄積：S3、Glacier、Glue
+2. ストリームデータ処理：Kinesis
+3. 大量データの解析手法：Athena、EMR、QuickSight、Redshift
+
+## Kinesis
+
+ストリームデータを収集・処理するためのフルマネージド型サービス
+
+- Kinesis Data Streams：ストリームデータを処理するアプリケーションを構築
+- Kinesis Data Firehouse：ストリームデータをS3やRedshiftなどへ簡単に配信
+- Kinesis Data Analytics：ストリームデータを標準的なSQLクエリでリアルタイムに可視化・分析
+
+### Kinesis Data Stream
+
+Kinesis Streamのデータ提供側とデータ利用側に様々なサービスが利用可能
+
+![03](./img/03.png)
+
+### Kinesis Data Firehose
+
+各種DBに配信・蓄積するためのストリーム処理を実施する。Lambdaと連携するとETLとしても機能する。
+
+ストリームデータを標準的なSQLクエリでリアルタイムに分析
+
+## Redshift
+
+高速でスケーラブルな費用対効果の高いマネージド型のＤＷＨ/データレイク分析サービス
+
+### Redshiftの構成
+
+クラスターというグループ単位で、複数ノードによってデータ処理を実行する構成
+
+![04](./img/04.png)
