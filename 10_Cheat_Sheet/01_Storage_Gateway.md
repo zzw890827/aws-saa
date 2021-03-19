@@ -9,8 +9,8 @@
 7. AWS存储网关支持三种存储接口：文件、卷和磁带。
 8. 下表显示了不同的可用网关以及接口和用例。
 
-   |New Name|Interface|Use Case|
-   |----|----|-------|-------|
+   |Name|Interface|Use Case|
+   |----|----|-------|
    |File Gateway|NFS, SMB|Allow on-prem or EC2 instances to store objects in S3 via NFS or SMB mount points|
    |Volume Gateway Stored Mode|iSCSI|Asynchronous replication of on-prem data to S3|
    |Volume Gateway Cached Mode|iSCSI|Primary data stored in S3 with frequently accessed data cached locally on-prem|
