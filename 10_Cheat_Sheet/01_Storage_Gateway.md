@@ -14,7 +14,7 @@
    |File Gateway|NFS, SMB|Allow on-prem or EC2 instances to store objects in S3 via NFS or SMB mount points|
    |Volume Gateway Stored Mode|iSCSI|Asynchronous replication of on-prem data to S3|
    |Volume Gateway Cached Mode|iSCSI|Primary data stored in S3 with frequently accessed data cached locally on-prem|
-   |Tape Gateway|Gateway-Virtual Tape Library|iSCSI|Virtual media changer and tape library for use with existing backup software|
+   |Tape Gateway|iSCSI|Virtual media changer and tape library for use with existing backup software|
 
 9. 你的每个网关都可以提供一种类型的接口。
 10. 任何类型的网关设备和AWS存储之间传输的所有数据都使用SSL加密。
